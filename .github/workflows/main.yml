@@ -167,8 +167,8 @@ jobs:
           {
             echo "## 📦 SDK 24.10 · (IPK)"
             echo ""
-            echo "| 架构 | quickfile | luci-app-quickfile |"
-            echo "| :--- | :--- | :--- |"
+            echo "| 架构 | quickfile | luci-app-quickfile | luci-i18n-quickfile-zh-cn |"
+            echo "| :--- | :--- | :--- | :--- |"
             luci_ipk=$(ls dist/luci-app-quickfile_*_all.ipk 2>/dev/null | head -1)
             luci_ipk_link=$( [ -n "$luci_ipk" ] && echo "[$(basename $luci_ipk)](${BASE}/$(basename $luci_ipk))" || echo "—" )
             # 这里补上 i18n 中文语言包
