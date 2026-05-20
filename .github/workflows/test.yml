@@ -16,7 +16,7 @@ jobs:
         arch:
           - aarch64_cortex-a53
         sdk:
-          - "23.05.4"
+          - "23.05.2"
 
     steps:
       - uses: actions/checkout@v6
